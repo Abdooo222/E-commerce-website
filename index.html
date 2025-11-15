@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaza - Modern Streetwear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Kaza</h1>
+    <div class="subtitle">Modern Streetwear for Everyone</div>
+  </header>
+
+  <nav>
+    <a href="#products">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Unleash Your Style with Kaza</h2>
+    <p>Discover bold, unique, high-quality streetwear.</p>
+    <button class="shop-btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+  </section>
+
+  <section class="products-section" id="products">
+    <div class="products-title">Our Collection</div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- Cart redirects to cart.html -->
+  <a href="cart.html" class="cart-btn">
+    🛒<span class="cart-count" id="cartCount">0</span>
+  </a>
+
+  <section id="about" class="info-section">
+    <h2>About Kaza</h2>
+    <p>
+      Kaza is a modern streetwear brand dedicated to empowering individuality.
+      We blend style, comfort, and bold design.
+    </p>
+  </section>
+
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="shop-btn send-btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Kaza. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
